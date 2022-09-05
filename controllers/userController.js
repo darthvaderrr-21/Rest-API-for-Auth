@@ -32,6 +32,7 @@ function userController() {
                         res.status(400).json({message: info.message})
                         return next(err)
                     }
+                    // res.send('LoggedIn!')
                     res.status(200).json(user)
                     console.log(user)
 
